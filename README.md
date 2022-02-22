@@ -59,4 +59,5 @@ if you faced a problem loading these packages try to install them using requirem
 
 # Note
 - Feel free to contact me if there are any problem 
-- To try Real Time Part you have to install redis 5 or above then use `[redis-server]` in another CMD
+- To try Real Time Part you have to install redis 5 or above then use `[redis-server]` in another CMD, # working on
+- Still work on OAuth 2.0(Google, Github) part right now
