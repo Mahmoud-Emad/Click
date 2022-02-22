@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Css links -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/responsev.css">
+
+    <!-- icon -->
+    <link rel="icon" href="./img/icons/icon.png">
+    <title>Click - {% block title %}
+      
+    {% endblock title %}</title>
+</head>
+<body>
+    <!-- header -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div class="items">
+                    <img src="./img/logo.png" class="logo-img-nav" alt="Click Logo">
+                    <p class="p-logo">lick</p>
+                </div>
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2 search-input" type="search" placeholder="Click Search" aria-label="Search">
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul-center-items">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-btn" viewBox="0 0 16 16">
+                                <path d="M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z"/>
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
+                                <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase bi-code-slash" viewBox="0 0 16 16">
+                                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="dropdown dropleft float-right">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                        </svg>
+                        <span class="badge badge-danger nt-timer">9</span>
+                    </a>
+                    <div class="dropdown-menu drop-edit-style">
+                        <p>Click's notification</p>
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown dropleft float-right">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        </svg>
+                        <span class="badge badge-danger nt-timer">5</span>
+                    </a>
+                    <div class="dropdown-menu drop-edit-style">
+                        <p>Click's Messages</p>
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown dropleft float-right">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <img class="img-person" src="./img/person/me.jpg" alt="">
+                    </a>
+                    <div class="dropdown-menu drop-edit-style">
+                        <p>Mahmoud Emad</p>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Sittings</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- {% include "snippets/header.html" %} -->
+
+    <!-- Boody -->
+    <div class="main">
+        <div class="row">
+            <div class="col-3">
+s
+            </div>
+            <div class="col-6">
+                <!-- textaria add post -->
+                <div class="father-childs">
+                    <form action="">
+                        <div class="form-floating ">
+                            <textarea class="form-control textarea-style" placeholder="What's happening?" id="floatingTextarea2"></textarea>
+                            <label for="floatingTextarea2">What's happening?</label>
+                        </div>
+                        <div class="under-aria">
+                            <div class="image-svg">
+                                <input id="input_skis" type="file">
+                                <label for="input_skis">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                        <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="Pause-circle">
+                                <input id="input_cir" type="file">
+                                <label for="input_cir">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="post-btn">
+                                <button class="btn btn-outline-primary btn-post">Post</button>
+                            </div>
+                        </div>
+                    </form>
+                </div><br>
+                <!-- Posts -->
+                <!-- normal post -->
+                <div class="post-space">
+                    <div class="user-name">
+                        <a href="" style="width: 100%;">
+                            <div class="row">
+                                <img class ="user-pic" src="./img/person/me.jpg" alt="">
+                                <p class="user_name_p" >Mahmoud Emad</p>
+                                <small class="dateTime">. 20 - 4 - 2018</small>
+                            </div>
+                        </a>
+                        <div class="btn-group dropleft post-more">
+                            <a href="" class="dropdown-toggle DisNoneDrope" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu Model_more Model_more_hover_right" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="{{tweet.copy}}">Send via Direct Message</a>
+                              <!-- <input type="text" value="{{tweet.slug}}" id="myInput"> -->
+                              <a class="dropdown-item" href="#" onclick="myFunction()" value="{{tweet.slug}}" id="copy-link">Copy link to Tweet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert header-actions">
+                        <p style="font-family: revert;">Hello Guys</p>
+                    </div>
+                    <!-- action user -->
+                    <div class="d-flex d-flex-just">
+                        <button class="btn-action" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart billa" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                        </button>
+                        <button class="btn-action" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-dots billa" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                        </button>
+                        <button class="btn-action" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply billaShare" viewBox="0 0 16 16">
+                                <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="alert alert-commits">
+                        <img class ="user-commint-inputs" src="./img/person/4.jpg" alt="">
+                        <form action="" style="width: 100%;">
+                            <input type="text" class="inp-comit" placeholder="Leave your opinion">
+                        </form>
+                    </div>
+                </div>
+                <!-- post with image -->
+                <div class="post-space">
+                    <div class="user-name">
+                        <a href="" style="width: 100%;">
+                            <div class="row">
+                                <img class ="user-pic" src="./img/person/me.jpg" alt="">
+                                <p class="user_name_p" >Mahmoud Emad</p>
+                                <small class="dateTime">. 20 - 4 - 2018</small>
+                            </div>
+                        </a>
+                        <div class="btn-group dropleft post-more">
+                            <a href="" class="dropdown-toggle DisNoneDrope" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu Model_more Model_more_hover_right" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="{{tweet.copy}}">Send via Direct Message</a>
+                              <!-- <input type="text" value="{{tweet.slug}}" id="myInput"> -->
+                              <a class="dropdown-item" href="#" onclick="myFunction()" value="{{tweet.slug}}" id="copy-link">Copy link to Tweet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert header-actions">
+                        <p style="font-family: revert;">COVID hands Australia Post opportunity to end daily delivery</p>
+                        <img class="img-post" src="./img/posts/post-1.jpg" alt="">
+                    </div>
+                    <!-- action user -->
+                    <div class="d-flex d-flex-just">
+                        <button class="btn-action" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart billa" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                        </button>
+                        <button class="btn-action" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-dots billa" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                        </button>
+                        <button class="btn-action" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply billaShare" viewBox="0 0 16 16">
+                                <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="alert alert-commits">
+                        <img class ="user-commint-inputs" src="./img/person/4.jpg" alt="">
+                        <form action="" style="width: 100%;">
+                            <input type="text" class="inp-comit" placeholder="Leave your opinion">
+                        </form>
+                    </div>
+                </div>
+                <!-- iframe youtube post -->
+                <div class="post-space">
+                    <div class="user-name">
+                        <a href="" style="width: 100%;">
+                            <div class="row">
+                                <img class ="user-pic" src="./img/person/me.jpg" alt="">
+                                <p class="user_name_p" >Mahmoud Emad</p>
+                                <small class="dateTime">. 20 - 4 - 2018</small>
+                            </div>
+                        </a>
+                        <div class="btn-group dropleft post-more">
+                            <a href="" class="dropdown-toggle DisNoneDrope" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu Model_more Model_more_hover_right" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="{{tweet.copy}}">Send via Direct Message</a>
+                              <!-- <input type="text" value="{{tweet.slug}}" id="myInput"> -->
+                              <a class="dropdown-item" href="#" onclick="myFunction()" value="{{tweet.slug}}" id="copy-link">Copy link to Tweet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert header-actions">
+                        <p style="font-family: revert;">القلب اشتكى من قلة الهشتكة
+                            
+                        </p>
+                        <iframe width="100%" height="315" class="i-frame" src="https://www.youtube.com/embed/12LBGRT2cho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- action user -->
+                    <div class="d-flex d-flex-just">
+                        <button class="btn-action" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart billa" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                        </button>
+                        <button class="btn-action" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-dots billa" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                        </button>
+                        <button class="btn-action" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply billaShare" viewBox="0 0 16 16">
+                                <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="all-of-comit">
+                        <p class="p-comit text-muted">Commint's</p>
+                        <div class="comits">
+                            <img class ="user-commint" src="./img/person/me.jpg" alt="">
+                            <div class="message-blue">
+                                <p class="message-content">This is an awesome message!</p>
+                                <div class="message-timestamp-left">SMS 13:37</div>
+                            </div>
+                        </div>
+                        <div class="comits">
+                            <img class ="user-commint" src="./img/person/me.jpg" alt="">
+                            <div class="message-blue">
+                                <p class="message-content">This is an awesome message!</p>
+                                <div class="message-timestamp-left">SMS 13:37</div>
+                            </div>
+                        </div>
+
+                        <div class="loadMore text-center text-muted">
+                            <small>
+                                <a class="text-muted" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                  view more
+                                </a>
+                            </small>
+                              <div class="collapse" id="collapseExample">
+                                <div class="comits">
+                                    <img class ="user-commint" src="./img/person/me.jpg" alt="">
+                                    <div class="message-blue">
+                                        <p class="message-content">This is an awesome message!</p>
+                                        <div class="message-timestamp-left">SMS 13:37</div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-commits">
+                        <img class ="user-commint-inputs" src="./img/person/me.jpg" alt="">
+                        <form action="" style="width: 100%;">
+                            <input type="text" class="inp-comit" placeholder="Leave your opinion">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 ">
+                <div class="alert colling-fix">
+                    <div class="card cards card-body">
+                        <h5>Frind's</h5>
+                        <div class="row">
+                            <a href="" class="pd-down">
+                                <img src="./img/person/2.jpg" class="f-usr" alt="">
+                            </a>
+                            <a href="" class="pd-down">
+                                <img src="./img/person/3.jpg" class="f-usr" alt="">
+                            </a>
+                            <a href="" class="pd-down">
+                                <img src="./img/person/4.jpg" class="f-usr" alt="">
+                            </a>
+                            <a href="" class="pd-down">
+                                <img src="./img/person/2.jpg" class="f-usr" alt="">
+                            </a>
+                            <a href="" class="pd-down">
+                                <img src="./img/person/3.jpg" class="f-usr" alt="">
+                            </a>
+                            <a href="" class="pd-down">
+                                <img src="./img/person/4.jpg" class="f-usr" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card cards card-body dv-cars">
+                        <h5>Followed Hashtags</h5>
+                        <div class="row">
+                            <a href="" >
+                                <p>#WTF_What_You_Say</p>
+                            </a>
+                            <a href="" >
+                                <p>#What happening?</p>
+                            </a>
+                            <a href="" >
+                                <p>#وحشوني ايامي السمرا</p>
+                            </a>
+                            <a href="" >
+                                <p>عبدالحليم لما قال #وفي عز الكلام #سكت الكلام</p>
+                            </a>
+                            <a href="" >
+                                <p>#Covid-19</p>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="card cards card-body dv-cars">
+                        
+                        <div class="Footer_and_terms">
+                            <small class="text-center">
+                            <a class="Foter-a" href="">
+                                Terms of Service
+                            </a>
+                            <a class="Foter-a" href="">
+                                Privacy Policy
+                            </a>
+                            <a class="Foter-a" href="">
+                                Cookie Policy
+                            </a>
+                            <a class="Foter-a" href="">
+                                Ads info
+                            </a>
+                            <a class="Foter-a" href="">
+                                More
+                            </a>
+                            <a class="Foter-a" href="">
+                                © 2020 Click, Inc.
+                            </a><br>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                a
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <!-- {% include "snippets/footer.html" %} -->
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  </body>
+    <!-- scripts -->
+</body>
+</html>

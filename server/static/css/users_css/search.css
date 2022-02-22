@@ -1,0 +1,164 @@
+
+
+
+
+
+.header-serch {
+    text-align: center;
+    font-family: revert;
+    color: var(--mainText);
+    padding-bottom: 25px;
+    padding-top: 0px;
+}
+
+.js-center{
+    border-bottom: 1px solid var(--borderColor);
+    padding-bottom: 20px;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.image-user-search{
+    width: 15%;
+
+}
+
+
+
+.profile-link{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.username_head{
+    width: 100%;
+    padding: 15px;
+    padding-left: 5px;
+
+}
+.username_head p{
+    font-size: 22px;
+    font-family: revert;
+    color: var(--mainText);
+
+}
+.bio_head{
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    width: 60%;
+}
+
+/* user search */
+
+.card-user-search {
+    width: 100%;
+    max-width: 100% !important;
+    background: transparent;
+    border-radius: 15px;
+    height: 110px;
+    margin-bottom: 30px !important;
+}
+
+.g-0{
+    height: 110px;
+    border-radius: 15px;
+}
+
+.profile-image {
+    border-radius: 15px 0px 0px 15px;
+    /* max-width: 96%; */
+    height: 108px;
+    width: 120px !important;
+    border: 1px silid var(--borderColor);
+}
+
+.col-md-8 {
+    flex: 0 0 auto;
+    width: 79.666667%;
+}
+
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 20.333333% !important;
+}
+
+.card-body-search{
+    text-align: start;
+    height: 110px;
+    width: 100%;
+}
+.card-text-search:last-child {
+    margin-bottom: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.user-svg {
+    fill: var(--borderColor);
+    width: 40px;
+    height: 30px;
+}
+.ds-flesc{
+    display: flex;
+}
+/* user search */
+
+.card-text-search{
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.click-style{
+    color: var(--borderColor);
+}
+
+
+/* tabs */
+
+.post-space {
+    width: 100%;
+}
+.p-post{
+    text-align: start;
+    margin-left: 50px;
+    margin-top: -25px;
+}
+.tabs-atr{
+    width: 150px;
+    color: var(--mainText);
+    background: #dbdbdb !important;
+    border-radius: 0px !important;
+    font-weight: 700;
+    box-shadow: 1px 1px 6px -1px #bababa;
+}
+.tabs-atr:hover{
+    width: 150px;
+    border-radius: 0px;
+}
+
+.nav-pills .tabs-atr.active, .nav-pills .show>.tabs-atr {
+    color: #000000;
+    background: #efefef !important;
+    border-radius: 0px !important;
+    font-weight: 700;
+    box-shadow: 1px 1px 6px -1px #bababa;
+}
+
+.b-top{
+    border-top: none;
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.father-childs {
+    padding: 20px;
+    margin-top: -5px;
+    border-bottom: 1px solid var(--borderColor);
+    border-top: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* tabs */
