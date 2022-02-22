@@ -53,6 +53,7 @@ if you faced a problem loading these packages try to install them using requirem
     - To activate it use "source (name_of_env)/bin/activate"
 
 - After using commands above you just have to use `[python manage.py migrate]` then `[python manage.py runserver]`
+- Go to `[http://127.0.0.1:8000/swagger/]` and use `[http://127.0.0.1:8000/api/auth/sign-up/]` endpoint to register a new account on our system
 - Go to `[http://127.0.0.1:8000/swagger/]` and use `[http://127.0.0.1:8000/api/auth/sign-in/]` endpoint to take a token
 - Put your `Bearer {token}` in authorization button to take access on all of endpoints except ADMIN endpoint
 
