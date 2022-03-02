@@ -10,6 +10,7 @@
     POST, COMMENT, REPLY, LIKE, SHARE
 
 - Add, Remove, Get Posts to Bookmarks
+- Translate the post to your account language -> Using Google Translator
 - Like a Comment
 - Add Friend
 - UnFriend
