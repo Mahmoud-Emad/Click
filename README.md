@@ -1,5 +1,5 @@
 # Description:
-    -A social media web-application with Django.
+    -an api social media web-application with Django and drf.
 
 # Features:
 - Sign Up, Login, OAuth 2.0(Google, Github), Logout, Forgot Password
